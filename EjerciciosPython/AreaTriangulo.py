@@ -6,7 +6,7 @@ Created on 15 may. 2019
 '''
 
 def area(base, altura):
-    area = (1 / 2)*base*altura
+    area = (base*altura)/2
     return area
 
 print("Calcular area de un triangulo")
