@@ -1,40 +1,52 @@
 import os
 
 def suma():
-    # os.system('clear')
+    os.system('clear')
     print("SUMA")
     print("Escribe el primer numero:")
-    i = input()
+    i = int(input())
     print("Escribe el segundo numero:")
-    j = input()
+    j = int(input())
+    print("-------------------------")
     print("La suma es: " + str( i + j ))
-    
+    print("-------------------------")
+    print("")
+
 def resta():
-    # os.system('clear')
+    os.system('clear')
     print("RESTA")
     print("Escribe el primer numero:")
-    i = input()
+    i = int(input())
     print("Escribe el segundo numero:")
-    j = input()
+    j = int(input())
+    print("-------------------------")
     print("La resta es: " + str( i - j ))
-    
+    print("-------------------------")
+    print("")
+
 def multiplicacion():
-    # os.system('clear')
+    os.system('clear')
     print("MULTIPLICACION")
     print("Escribe el primer numero:")
-    i = input()
+    i = int(input())
     print("Escribe el segundo numero:")
-    j = input()
+    j = int(input())
+    print("-------------------------")
     print("La multiplicacion es: " + str( i * j ))
-    
+    print("-------------------------")
+    print("")
+
 def division():
-    # os.system('clear')
+    os.system('clear')
     print("DIVISION")
     print("Escribe el primer numero:")
-    i = input()
+    i = int(input())
     print("Escribe el segundo numero:")
-    j = input()
+    j = int(input())
+    print("-------------------------")
     print("La division es: " + str( i / j ))
+    print("-------------------------")
+    print("")
 
 while True:
     # os.system('clear')
@@ -46,7 +58,7 @@ while True:
     print("4 - Division")
     print("5 - Cerrar")
     print("Numero: ")
-    operacion = input()
+    operacion = int(input())
 
     if operacion == 1:
         suma()
