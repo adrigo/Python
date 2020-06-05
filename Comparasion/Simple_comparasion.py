@@ -21,7 +21,7 @@ format =  "{a: >9}    ==    {b: <8} :    {c: <5}"
 
 for value in values:
   print(formatBoolean.format(a=repr(value), c=str(bool(value))))
-print("\n")
+print("\n--------------------------------------------------------------------------------\n")
 
 for value in values:
     for value2 in values:
