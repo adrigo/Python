@@ -16,12 +16,12 @@ values = [
   [],
   ['']
 ]
-formatBoolean =  "{a: >9}    ToBoolean    :    {c: <5}"
+formatBoolean =  "{a: >10}    To BOOLEAN    :    {c: <5}"
 format =  "{a: >9}    ==    {b: <8} :    {c: <5}"
 
 for value in values:
   print(formatBoolean.format(a=repr(value), c=str(bool(value))))
-print("\n--------------------------------------------------------------------------------\n")
+print("\n----------------------------------------\n")
 
 for value in values:
     for value2 in values:
