@@ -1,12 +1,14 @@
 values = [
-  #nan,
+  float('nan'),
+  float('inf'),
+  -float('inf'),
   0,
   1,
   -1,
   "0",
   "1",
   "-1",
-  "php",
+  "string",
   '',
   True,
   False,
@@ -14,15 +16,15 @@ values = [
   [],
   ['']
 ]
-format =  "{a: >7}    ==    {b: <7} :    {c: <5}"
-formatBoolean =  "{a: >7}    ToBoolean    :    {c: <5}"
+formatBoolean =  "{a: >9}    ToBoolean    :    {c: <5}"
+format =  "{a: >9}    ==    {b: <8} :    {c: <5}"
 
 for value in values:
-  print(formatBoolean.format(a=str(value), c=str(bool(value))))
+  print(formatBoolean.format(a=repr(value), c=str(bool(value))))
 print("\n")
 
 for value in values:
     for value2 in values:
-        print(format.format(a=str(value), b=str(value2), c=str(bool(value == value2))))
+        print(format.format(a=repr(value), b=repr(value2), c=str(bool(value == value2))))
     print("\n")
  
